@@ -1,0 +1,68 @@
+.sticky-icon {
+  z-index: 1;
+  position: fixed;
+  bottom: 15%;
+  right: 0%;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+
+  a {
+    transform: translate(250px, 0px);
+    border-radius: 3px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: all 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: -2px 4px 4px rgba($color: #000000, $alpha: 0.4);
+
+    &:hover {
+      color: #fff;
+      transform: translate(140px, 0px);
+      box-shadow: -3px 6px 6px rgba($color: #000000, $alpha: 0.3);
+
+      /* i {
+        transform: rotate(360deg);
+      } */
+    }
+
+    &:active {
+      box-shadow: -2px 4px 4px rgba($color: #000000, $alpha: 0.6);
+      transform: translate(145px, 3px);
+    }
+  }
+}
+
+/*.search_icon a:hover i  {
+      transform:rotate(360deg);}*/
+
+.Linkedin {
+  background-color: #0077b5;
+  color: #fff;
+}
+
+.Github {
+  background-color: #333;
+  color: #fff;
+}
+
+.Email {
+  background-color: #6fc2b0;
+  color: #fff;
+}
+
+.Resume {
+  background-color: #565f69;
+  color: #fff;
+}
+
+.sticky-icon a i {
+  height: 30px;
+  width: 30px;
+  color: #fff;
+  text-align: center;
+  margin-right: 20px;
+  transition: all 0.5s;
+  font-size: 1.5em;
+}
