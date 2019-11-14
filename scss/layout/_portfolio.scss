@@ -11,7 +11,7 @@
     overflow: hidden;
     box-shadow: 0.2em 0.4em 1em rgba($color: #000000, $alpha: 0.3);
 
-    .portfolio-item-caption {
+    &-caption {
       position: absolute;
       top: 0;
       left: 0;
@@ -21,10 +21,37 @@
       &:hover {
         opacity: 1;
       }
-      .portfolio-item-caption-content {
+      &-content {
         font-size: 1.5rem;
       }
     }
+
+    &-img {
+      &-container {
+        padding-top: 72%;
+        position: relative;
+      }
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      object-fit: scale-down;
+      /* bottom: 0;
+      right: 0; */
+      max-width: 100%;
+      max-height: 100%;
+      padding: 1rem;
+    }
+  }
+
+  .portfolio-item:hover .portfolio-item-caption {
+    opacity: 1;
+    z-index: 100;
+  }
+
+  &-vid-preview {
+    width: 100%;
+    padding-bottom: 2rem;
   }
 }
 

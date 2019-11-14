@@ -12,3 +12,13 @@
     }
   }
 }
+
+html {
+  font-size: 14px;
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 16px;
+  }
+}

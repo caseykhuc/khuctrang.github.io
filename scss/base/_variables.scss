@@ -20,8 +20,13 @@ $tertiary: $red-bold !default; */
 
 /* $white: #eae7dc !default; */
 $secondary: #123c69 !default;
-$primary: darken(#ded6cc, 15%);
-$white: lighten(#ded6cc, 12%);
+/* $secondary: lighten(#333, 85%); */
+/* $primary: darken(#ded6cc, 15%);
+$white: lighten(#ded6cc, 12%); */
+
+/* $primary: lighten(#333, 35%); */
+$primary: lighten(#123c69, 20%);
+$white: lighten(#333, 85%);
 
 // Override Bootstrap font variables
 $font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI",

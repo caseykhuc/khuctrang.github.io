@@ -83,35 +83,43 @@
     </nav>
 
     <!-- Masthead -->
-    <header class="masthead bg-primary text-white text-center">
+    <header class="masthead text-white text-center">
       <div class="container d-flex align-items-center flex-column">
+        <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source src="img/vid/video.mp4" type="video/mp4" />
+            <source src="img/vid/video.webm" type="video/webm" />
+            Your browser is not supported
+          </video>
+        </div>
         <!-- Masthead Avatar Image -->
-        <img
+        <!-- <img
           class="masthead-avatar mb-5"
           src="./img/avataaars.png"
           alt="avatar"
-        />
+        /> -->
 
         <!-- Masthead Heading -->
-        <h1 class="masthead-heading text-uppercase mb-0">Casey Khuc</h1>
-
-        <!-- Masthead Subheading -->
-        <br />
-        <p class="masthead-subheading font-weight-light mb-0">
-          Front-end Developer
-        </p>
-        <!-- Icon Divider -->
-        <div class="divider-custom divider-light">
-          <div class="divider-custom-line"></div>
-        </div>
-        <div class="R6-Wf">
-          <div class="chip">HTML5</div>
-          <div class="chip">CSS3</div>
-          <div class="chip">JavaScript</div>
-          <div class="chip">Git</div>
-          <div class="chip">React</div>
-          <div class="chip">WordPress</div>
-          <div class="chip">BootStrap</div>
+        <div class="masthead-heading-container">
+          <h1 class="masthead-heading text-uppercase mb-0">Casey Khuc</h1>
+          <!-- Masthead Subheading -->
+          <br />
+          <p class="masthead-subheading font-weight-light mb-0">
+            Front-end Developer
+          </p>
+          <!-- Icon Divider -->
+          <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+          </div>
+          <div class="chip-container">
+            <div class="chip">HTML5</div>
+            <div class="chip">CSS3</div>
+            <div class="chip">JavaScript</div>
+            <div class="chip">Git</div>
+            <div class="chip">React</div>
+            <div class="chip">WordPress</div>
+            <div class="chip">BootStrap</div>
+          </div>
         </div>
       </div>
     </header>
@@ -149,7 +157,14 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/game.png" alt="" />
+              <!-- <img class="img-fluid" src="img/portfolio/game.png" alt="" /> -->
+              <div class="portfolio-item-img-container">
+                <img
+                  class="img-fluid portfolio-item-img"
+                  src="img/portfolio/hn-icon.png"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
 
@@ -246,26 +261,26 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="page-section" id="contact">
-      <div class="container">
-        <!-- Contact Section Heading -->
-        <h2
+    <!-- <section class="page-section" id="contact">
+      <div class="container"> -->
+    <!-- Contact Section Heading -->
+    <!-- <h2
           class="page-section-heading text-center text-uppercase text-secondary mb-0"
         >
           Contact Me
-        </h2>
+        </h2> -->
 
-        <!-- Icon Divider -->
-        <div class="divider-custom">
+    <!-- Icon Divider -->
+    <!-- <div class="divider-custom">
           <div class="divider-custom-line"></div>
         </div>
-
-        <!-- Contact Section Form -->
-        <div class="row">
+ -->
+    <!-- Contact Section Form -->
+    <!-- <div class="row">
           <div class="col-lg-8 mx-auto"></div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- https://www.linkedin.com/in/casey-trang-khuc-804966148/ -->
     <section class="sticky-icon">
@@ -373,30 +388,61 @@
                   <h2
                     class="portfolio-modal-title text-secondary text-uppercase mb-0"
                   >
-                    Controller
+                    Hacker News Reader
                   </h2>
                   <!-- Icon Divider -->
                   <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                   </div>
                   <!-- Portfolio Modal - Image -->
-                  <img
+                  <!-- <img
                     class="img-fluid rounded mb-5"
                     src="img/portfolio/game.png"
                     alt=""
-                  />
+                  /> -->
+                  <video class="portfolio-vid-preview" autoplay muted loop>
+                    <source src="img/vid/news-reader.mkv" type="video/mp4" />
+                    <source src="img/vid/news-reader.gif" />
+
+                    Your browser is not supported
+                  </video>
+
                   <!-- Portfolio Modal - Text -->
                   <p class="mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Mollitia neque assumenda ipsam nihil, molestias magnam,
-                    recusandae quos quis inventore quisquam velit asperiores,
-                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
-                    Nam.
+                    Simple create-react-app project utilizing Hacker News API to
+                    render news details with feature to toggle themes and
+                    layout.
                   </p>
-                  <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <div class="chip-container">
+                    <div class="chip">HTML5</div>
+                    <div class="chip">CSS3</div>
+                    <div class="chip">React</div>
+                    <div class="chip">Redux</div>
+                    <div class="chip">Styled-Component</div>
+                  </div>
+                  <br />
+                  <br />
+                  <!-- <button class="btn btn-primary" href="#" data-dismiss="modal">
                     <i class="fas fa-times fa-fw"></i>
-                    Close Window
-                  </button>
+                    Close
+                  </button> -->
+                  <a
+                    href="https://github.com/khuctrang/news-reader"
+                    target="_blank"
+                  >
+                    <button class="btn btn-primary">
+                      <i class="fas fa-code"></i>
+                      Code
+                    </button>
+                  </a>
+                  <a
+                    href="https://khuctrang.github.com/news-reader"
+                    target="_blank"
+                    ><button class="btn btn-primary">
+                      <i class="fas fa-eye"></i>
+                      Demo
+                    </button></a
+                  >
                 </div>
               </div>
             </div>
