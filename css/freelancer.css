@@ -9912,12 +9912,13 @@ html {
 }
 
 .masthead .masthead-heading {
-  font-size: 2.75rem;
-  line-height: 2.75rem;
+  font-size: 5rem;
+  line-height: 5rem;
+  text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.8);
 }
 
 .masthead .masthead-subheading {
-  font-size: 1.25rem;
+  font-size: 2rem;
 }
 
 .masthead .masthead-avatar {
@@ -9930,8 +9931,8 @@ html {
     padding-bottom: 6rem;
   }
   .masthead .masthead-heading {
-    font-size: 4rem;
-    line-height: 3.5rem;
+    font-size: 6rem;
+    line-height: 6rem;
   }
   .masthead .masthead-subheading {
     font-size: 1.5rem;
