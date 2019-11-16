@@ -1,10 +1,44 @@
 .footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: $secondary;
-  color: $white;
-}
-
-.copyright {
-  background-color: darken($secondary, 10%);
+  width: 100%;
+  padding: 2rem;
+  background: $footer-background;
+  font-size: 0.9rem;
+  text-align: center;
+  /* font-family: $font-secondary; */
+  border-top: 1px solid rgba(lighten($primary, 50%), 0.5);
+  user-select: text;
+  color: lighten($primary, 50%);
+  &__item {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 6rem;
+    }
+    @media only screen and (max-width: 900px) {
+      display: block;
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 0.2rem;
+      }
+      text-align: left;
+    }
+  }
+  &__contact {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+    @media only screen and (max-width: 900px) {
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+        margin-bottom: 0.2rem;
+      }
+    }
+  }
+  &__link {
+    &:link,
+    &:visited {
+      color: $white;
+      text-decoration: none;
+    }
+  }
 }

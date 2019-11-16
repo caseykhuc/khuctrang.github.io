@@ -34,16 +34,13 @@
 
   <body id="page-top">
     <!-- Navigation -->
-    <nav
-      class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
-      id="mainNav"
-    >
+    <nav class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top"
           >&lt;Casey Khuc /&gt;</a
         >
         <button
-          class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+          class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold text-secondary rounded"
           type="button"
           data-toggle="collapse"
           data-target="#navbarResponsive"
@@ -51,7 +48,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          Menu
+          <!-- Menu -->
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -68,13 +65,6 @@
                 class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                 href="#about"
                 >About</a
-              >
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a
-                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#contact"
-                >Contact</a
               >
             </li>
           </ul>
@@ -101,14 +91,16 @@
 
         <!-- Masthead Heading -->
         <div class="masthead-heading-container">
-          <h1 class="masthead-heading text-uppercase mb-0">Casey Khuc</h1>
+          <h1 class="masthead-heading text-uppercase mb-0">
+            Casey Khuc
+          </h1>
           <!-- Masthead Subheading -->
           <br />
-          <p class="masthead-subheading font-weight-light mb-0">
+          <p class="masthead-subheading font-weight-light mb-0 text-secondary">
             Front-end Developer
           </p>
           <!-- Icon Divider -->
-          <div class="divider-custom divider-light">
+          <div class="divider-custom">
             <div class="divider-custom-line"></div>
           </div>
           <div class="chip-container">
@@ -125,12 +117,10 @@
     </header>
 
     <!-- Portfolio Section -->
-    <section class="page-section portfolio" id="portfolio">
+    <section class="page-section portfolio bg-white" id="portfolio">
       <div class="container">
         <!-- Portfolio Section Heading -->
-        <h2
-          class="page-section-heading text-center text-uppercase text-secondary mb-0"
-        >
+        <h2 class="page-section-heading text-center text-uppercase mb-0">
           Projects
         </h2>
 
@@ -184,7 +174,17 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/safe.png" alt="" />
+              <!-- <img class="img-fluid" src="img/portfolio/safe.png" alt="" /> -->
+              <div
+                class="portfolio-item-img-container"
+                style="background-color: #333;"
+              >
+                <img
+                  class="img-fluid portfolio-item-img"
+                  src="img/portfolio/cap.png"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
 
@@ -228,7 +228,7 @@
         <!-- About Section Content -->
         <div class="row">
           <div class="col-lg-4 ml-auto">
-            <p class="lead">
+            <p class="lead text-secondary">
               I'm Casey Trang Khuc, an open-minded individual that always seeks
               to enhance knowledge and experience through constant learning and
               working process. Through my coding journey, I always try to
@@ -237,7 +237,7 @@
             </p>
           </div>
           <div class="col-lg-4 mr-auto">
-            <p class="lead">
+            <p class="lead text-secondary">
               After a highschool program for gifted students in Hanoi and 2
               years of Computer Programmer diploma in Toronto, Canada; I'm now
               looking for opportunity to contribute cultivated experience,
@@ -250,7 +250,7 @@
         <!-- About Section Button -->
         <div class="text-center mt-4">
           <a
-            class="btn btn-xl btn-outline-light"
+            class="btn btn-outline-light"
             href="https://startbootstrap.com/themes/freelancer/"
           >
             <i class="fas fa-download mr-2"></i>
@@ -287,16 +287,10 @@
       <a href="#" target="_blank" class="Linkedin"
         ><i class="fab fa-linkedin"></i> Linkedin
       </a>
-      <a
-        href="https://www.linkedin.com/in/casey-trang-khuc-804966148/"
-        target="_blank"
-        class="Github"
+      <a href="https://github.com/khuctrang" target="_blank" class="Github"
         ><i class="fab fa-github"></i> Github
       </a>
-      <a
-        href="https://www.linkedin.com/in/casey-trang-khuc-804966148/"
-        target="_blank"
-        class="Email"
+      <a href="mailto:khuctrang1812@gmail.com" target="_blank" class="Email"
         ><i class="fas fa-envelope"></i> Email
       </a>
       <a
@@ -308,45 +302,27 @@
     </section>
 
     <!-- Footer -->
-    <!-- <footer class="footer text-center">
-    <div class="container">
-      <div class="row"> -->
+    <!-- Copyright Section -->
 
-    <!-- Footer Location -->
-    <!-- <div class="col-lg-6 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Location</h4>
-          <p class="lead mb-0">Hanoi, Vietnam</p>
-        </div> -->
-
-    <!-- Footer Social Icons -->
-    <!-- <div class="col-lg-6 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Find me</h4>
-          <a class="btn btn-outline-light btn-social mx-1" href="#">
-            <i class="fab fa-fw fa-facebook-f"></i>
-          </a>
-          <a class="btn btn-outline-light btn-social mx-1" href="#">
-            <i class="fab fa-fw fa-twitter"></i>
-          </a>
-          <a class="btn btn-outline-light btn-social mx-1" href="#">
-            <i class="fab fa-fw fa-linkedin-in"></i>
-          </a>
-          <a class="btn btn-outline-light btn-social mx-1" href="#">
-            <i class="fab fa-fw fa-dribbble"></i>
-          </a>
+    <footer class="footer">
+      <div class="footer__item">
+        &copy; Casey Khuc 2019 powered by Start Bootstrap
+      </div>
+      <div class="footer__item">
+        <div class="footer__contact">
+          Email:
+          <a href="mailto:khuctrang1812@gmail.com" class="footer__link"
+            >khuctrang1812@gmail.com</a
+          >
+        </div>
+        <div class="footer__contact">
+          Tel:
+          <a href="tel: +84 394 552 851" class="footer__link"
+            >+84 394 552 851</a
+          >
         </div>
       </div>
-    </div>
-  </footer> -->
-
-    <!-- Copyright Section -->
-    <section class="copyright py-4 text-center text-white">
-      <div class="container">
-        <small
-          >Copyright &copy; <a href="/">Casey Khuc</a> 2019 powered by
-          <a href="http://startbootstrap.com">Start Bootstrap</a></small
-        >
-      </div>
-    </section>
+    </footer>
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-to-top d-lg-none position-fixed ">
@@ -386,7 +362,7 @@
                 <div class="col-lg-8">
                   <!-- Portfolio Modal - Title -->
                   <h2
-                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                    class="portfolio-modal-title text-uppercase mb-0"
                   >
                     Hacker News Reader
                   </h2>
@@ -403,7 +379,6 @@
                   <video class="portfolio-vid-preview" autoplay muted loop>
                     <source src="img/vid/news-reader.mkv" type="video/mp4" />
                     <source src="img/vid/news-reader.gif" />
-
                     Your browser is not supported
                   </video>
 
@@ -414,11 +389,11 @@
                     layout.
                   </p>
                   <div class="chip-container">
-                    <div class="chip">HTML5</div>
-                    <div class="chip">CSS3</div>
+                    <div class="chip">HTML5 & CSS3</div>
                     <div class="chip">React</div>
                     <div class="chip">Redux</div>
                     <div class="chip">Styled-Component</div>
+                    <div class="chip">API</div>
                   </div>
                   <br />
                   <br />
@@ -440,7 +415,7 @@
                     target="_blank"
                     ><button class="btn btn-primary">
                       <i class="fas fa-eye"></i>
-                      Demo
+                      Live
                     </button></a
                   >
                 </div>
@@ -478,32 +453,67 @@
                 <div class="col-lg-8">
                   <!-- Portfolio Modal - Title -->
                   <h2
-                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                    class="portfolio-modal-title text-uppercase mb-0"
                   >
-                    Locked Safe
+                    Trello Clone
                   </h2>
                   <!-- Icon Divider -->
                   <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                   </div>
                   <!-- Portfolio Modal - Image -->
-                  <img
+                  <!-- <img
                     class="img-fluid rounded mb-5"
                     src="img/portfolio/safe.png"
                     alt=""
-                  />
+                  /> -->
+                  <video class="portfolio-vid-preview" autoplay muted loop>
+                    <source src="img/vid/trello-clone.mkv" type="video/mp4" />
+                    <source src="img/vid/trello-clone.mp4" type="video/mp4" />
+                    Your browser is not supported
+                  </video>
                   <!-- Portfolio Modal - Text -->
                   <p class="mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Mollitia neque assumenda ipsam nihil, molestias magnam,
-                    recusandae quos quis inventore quisquam velit asperiores,
-                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
-                    Nam.
+                    Trello is a task management tool the provides a visual
+                    overview of your projects based on post-it notes.
+                    <br /><br />
+
+                    I choose to practice on this project to strengthen my skills
+                    with React with Hooks, Redux and other modern related
+                    packages. With styling, I utilized both React Ui Framework
+                    and styled-components for customized items.<br /><br />
                   </p>
-                  <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <!-- <button class="btn btn-primary" href="#" data-dismiss="modal">
                     <i class="fas fa-times fa-fw"></i>
                     Close Window
-                  </button>
+                  </button> -->
+                  <div class="chip-container">
+                    <div class="chip">HTML5 & CSS3</div>
+                    <div class="chip">Material UI</div>
+                    <div class="chip">React</div>
+                    <div class="chip">Redux</div>
+                    <div class="chip">Styled-Component</div>
+                    <div class="chip">redux-persist</div>
+                    <div class="chip">UX / UI</div>
+                  </div>
+                  <br /><br />
+                  <a
+                    href="https://github.com/khuctrang/trello-clone"
+                    target="_blank"
+                  >
+                    <button class="btn btn-primary">
+                      <i class="fas fa-code"></i>
+                      Code
+                    </button>
+                  </a>
+                  <a
+                    href="https://khuctrang.github.com/trello-clone"
+                    target="_blank"
+                    ><button class="btn btn-primary">
+                      <i class="fas fa-eye"></i>
+                      Demo
+                    </button></a
+                  >
                 </div>
               </div>
             </div>
@@ -539,7 +549,7 @@
                 <div class="col-lg-8">
                   <!-- Portfolio Modal - Title -->
                   <h2
-                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                    class="portfolio-modal-title text-uppercase mb-0"
                   >
                     Submarine
                   </h2>
